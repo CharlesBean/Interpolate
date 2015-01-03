@@ -5,19 +5,17 @@
 .site-header {
     min-height: 60px;
     max-height: 90px;
-    margin-bottom: 130px;
-    margin-left: auto;
-    margin-right: auto;
 
     // Positioning fixed
     position: fixed;
     width: 100%;
+    display: inline-block;
 
     // Dark
     background-image: $header-background;
     
     // Shadowing
-    box-shadow: inset 0 -10px 7px -10px black; //$brand-color or white?
+    box-shadow: inset 0 -10px 4px -10px white; //$brand-color or white?
 }
 
 .header-wrapper {
@@ -25,8 +23,18 @@
     margin-right: auto;
     overflow: hidden;
     max-width: 1080px;
+    max-height: 90px;
     margin-right: auto;
     position: relative;
+}
+
+.header-left {
+    max-height: 90px;
+    float: left;
+}
+
+.header-right {
+    float: right;
 }
 
 .page-title {
@@ -34,34 +42,38 @@
     font-size: 60px;
     font-style: italic;
     float: left;
-    opacity: .8;
+    opacity: .9;
     margin-top: 5px;
     margin-left: 5px;
     
     position: relative;
     color: white;
     text-decoration: none;
+
     
     /** 
      * Handling hovers (box shadow animation) 
     **/
     &:hover {
         color: white;
+        opacity: 1;
     }
     
     &:before {
         content: "";
         position: absolute;
-        width: 97%;
+        width: 350%; //310
         height: 3px;
         bottom: 20px;
         left: 0;
         background-color: $brand-color;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
+        visibility: visible;
+        
+        // Uncomment to add animation
+//        -webkit-transform: scaleX(0);
+//        transform: scaleX(0);
+//        -webkit-transition: all 0.3s ease-in-out 0s;
+//        transition: all 0.3s ease-in-out 0s;
     }
     
     &:hover:before {
@@ -75,4 +87,20 @@
     }
 }
 
-/*************************************************/
+.twitter {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 18px;
+    color: $brand-color;
+    opacity: .9;
+    margin-top: 2.4em;
+    margin-left: -1px;
+    
+    display: inline-block;
+    
+    &:hover {
+        color: white;
+    }
+}
+
+

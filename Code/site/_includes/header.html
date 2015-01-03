@@ -2,10 +2,23 @@
     
     <div class='header-wrapper'>
     
-        <a class='page-title' href='{{ site.data.settings.baseurl }}'>{{ site.data.settings.title }}</a>
         
-        {% include navbar.html %}
+        <div class='header-left'>
         
+            <a href='{{ site.data.settings.baseurl }}'><span class='page-title'>{{ site.data.settings.title }}</span></a>
+        
+            <a href='http://twitter.com/{{ site.data.settings.twitter_username }}'><span class='twitter'>@{{ site.data.settings.twitter_username }}</span></a>
+            
+        </div>
+        
+        
+        
+        <div class='header-right'>
+        
+            {% include navbar.html %}
+        
+        </div>
+
     </div>
     
 </header>

@@ -5,6 +5,40 @@
  * Navbar
  */
 
+.cn-button {
+    font-family: 'navigation-font', sans-serif;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    height: 3.3em;
+    width: 3.3em;
+    background-color: $brand-color;
+    border-radius: 50%;
+    //opacity: .9;
+    text-transform: uppercase;
+    
+    text-align: center;
+    position: relative;
+    float: right;
+    margin-top: 1.2em;
+    //margin-right: 5em;
+    margin-bottom: auto;
+    
+    cursor: pointer;
+    z-index: 11;
+    
+    &:hover, &:active, &:focus {
+        opacity: 1.0;
+        outline: 0;
+    }
+    
+    &:after {
+        background-color: $brand-color;
+        color: white;
+    }
+}
+
 .cn-wrapper {
     position: relative;
     z-index: 10;
@@ -49,40 +83,6 @@
     transition: all .3s ease;
     transform: scale(1);
     pointer-events: auto;
-}
-
-.cn-button {
-    font-family: 'navigation-font', sans-serif;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5em;
-    height: 3.3em;
-    width: 3.3em;
-    background-color: $brand-color;
-    border-radius: 50%;
-    //opacity: .9;
-    text-transform: uppercase;
-    
-    text-align: center;
-    position: relative;
-    float: right;
-    margin-top: 5px;
-    margin-right: 5em;
-    margin-bottom: auto;
-    
-    cursor: pointer;
-    z-index: 11;
-    
-    &:hover, &:active, &:focus {
-        opacity: 1.0;
-        outline: 0;
-    }
-    
-    &:after {
-        background-color: $brand-color;
-        color: white;
-    }
 }
 
 .cn-overlay {

@@ -3,7 +3,7 @@
  */
 
 .page-content {
-    padding: $spacing-unit 0;
+    padding-top: 90px;
     height: 2000px; // REMOVE
     margin: 0 auto;
 }
@@ -34,6 +34,11 @@
 
 .home {
     margin-top: 100px;
+}
+
+.wrapper{
+    background-color: white;
+    height: 100%;
 }
 
 /*************************************************/

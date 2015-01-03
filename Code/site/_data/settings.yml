@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   All of your music are belong to us.
 email: interpolateblog@gmail.com
 author: Charles Bean
-twitter_username: 
+twitter_username: interpolatemusic
 github_username: CharlesBean
 url: "" # base hostname & protocol
 baseurl: "/" # subpath (site/)
