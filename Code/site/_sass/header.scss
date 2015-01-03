@@ -14,14 +14,14 @@
     // Dark
     background-image: $header-background;
     
-    // Shadowing
-    box-shadow: inset 0 -10px 4px -10px white; //$brand-color or white?
+    // Shadowing (3rd number is shadow size)
+    box-shadow: inset 0 -10px 10px -10px black ; //$brand-color or white?
 }
 
 .header-wrapper {
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    overflow: visible;
     max-width: 1080px;
     max-height: 90px;
     margin-right: auto;
@@ -42,7 +42,7 @@
     font-size: 60px;
     font-style: italic;
     float: left;
-    opacity: .9;
+    //opacity: .9;
     margin-top: 5px;
     margin-left: 5px;
     
@@ -62,7 +62,7 @@
     &:before {
         content: "";
         position: absolute;
-        width: 350%; //310
+        width: 330%; //310 (width of the underline)
         height: 3px;
         bottom: 20px;
         left: 0;
@@ -79,7 +79,7 @@
     &:hover:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
-        transform: scaleX(1);   
+        transform: scaleX(1); 
     }
 
     &:after {
@@ -93,7 +93,7 @@
     font-size: 18px;
     color: $brand-color;
     opacity: .9;
-    margin-top: 2.4em;
+    margin-top: 2.5em;
     margin-left: -1px;
     
     display: inline-block;
