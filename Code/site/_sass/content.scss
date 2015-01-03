@@ -1,0 +1,39 @@
+/**
+ * Page content
+ */
+
+.page-content {
+    padding: $spacing-unit 0;
+    height: 2000px; // REMOVE
+    margin: 0 auto;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+    position: relative;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+.home {
+    margin-top: 100px;
+}
+
+/*************************************************/

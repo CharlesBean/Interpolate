@@ -1,5 +1,10 @@
 /* Removed all prefixed .csstransforms that came before each class.. */
 
+
+/**
+ * Navbar
+ */
+
 .cn-wrapper {
     position: relative;
     z-index: 10;
@@ -47,7 +52,7 @@
 }
 
 .cn-button {
-    font-family: 'title-font', sans-serif;
+    font-family: 'navigation-font', sans-serif;
     background: none;
     border: none;
     color: white;
@@ -56,7 +61,7 @@
     width: 3.3em;
     background-color: $brand-color;
     border-radius: 50%;
-    opacity: .9;
+    //opacity: .9;
     text-transform: uppercase;
     
     text-align: center;

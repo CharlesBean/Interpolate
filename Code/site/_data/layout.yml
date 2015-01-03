@@ -1,14 +1,10 @@
 #-----------------------
 
-# Images
-logo: 'logo.svg'
-hero: 'hero-bg.jpg'
-avatar: 'travitar.jpg'
-
-
 # Image URLs
 documentBackgroundImage: '/assets/images/tree_bark.png'
 headerBackgroundImage: '/assets/images/dark-metropolis.jpg'
 
 # Font URLs
 titleFont: '/assets/fonts/pincoyablack.otf'
+navigationFont: '/assets/fonts/loaded.ttf'
+

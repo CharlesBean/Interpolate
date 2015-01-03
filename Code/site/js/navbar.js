@@ -7,7 +7,7 @@
     var open = false; // Open flag
     
     button.addEventListener('click', navHandler, false);
-    //button.addEventListener('focus', navHandler, false);
+    //button.addEventListener('focus', navHandler, false); // not needed? & causes double event click catching
     wrapper.addEventListener('click', cnHandler, false);
     
     function cnHandler(e){
@@ -35,7 +35,7 @@
     
     function closeNav(){
         open = false;
-        button.innerHTML = "Nav";
+        button.innerHTML = "Menu";
         overlay.classList.remove('on-overlay');
         wrapper.classList.remove('opened-nav');
     }

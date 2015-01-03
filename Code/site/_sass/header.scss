@@ -1,0 +1,78 @@
+/**
+ * Site header
+ */
+
+.site-header {
+    min-height: 60px;
+    max-height: 90px;
+    margin-bottom: 130px;
+    margin-left: auto;
+    margin-right: auto;
+
+    // Positioning fixed
+    position: fixed;
+    width: 100%;
+
+    // Dark
+    background-image: $header-background;
+    
+    // Shadowing
+    box-shadow: inset 0 -10px 7px -10px black; //$brand-color or white?
+}
+
+.header-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    max-width: 1080px;
+    margin-right: auto;
+    position: relative;
+}
+
+.page-title {
+    font-family: 'title-font', sans-serif; //'title-font', 
+    font-size: 60px;
+    font-style: italic;
+    float: left;
+    opacity: .8;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+    position: relative;
+    color: white;
+    text-decoration: none;
+    
+    /** 
+     * Handling hovers (box shadow animation) 
+    **/
+    &:hover {
+        color: white;
+    }
+    
+    &:before {
+        content: "";
+        position: absolute;
+        width: 97%;
+        height: 3px;
+        bottom: 20px;
+        left: 0;
+        background-color: $brand-color;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    &:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);   
+    }
+
+    &:after {
+        content: "\0000a0"; // Fixing italic color change glitch
+    }
+}
+
+/*************************************************/
