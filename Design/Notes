@@ -1,0 +1,50 @@
+--------------------------
+
+Main Page
+    - Header
+        - Title in header, float left
+        - Popup circular animated navbar in header, float right
+            - Icons
+        - Bottom edge shadowed and outlined
+    - Body
+    
+    - Footer
+    
+About Page
+
+Archive Page
+
+Favorites Page?
+
+
+
+
+---------------------------
+
+IDEAS
+
+- Weekly Interpolation
+    - Interject a bit of me discussing the song into a song
+- Album of the Month
+- Embedded player? Spotify? Soundcloud?
+- Comments (Disqus)
+- Ratings
+    - Meter, or stars?
+    
+    
+    
+    
+---------------------------
+    
+TO FIX:
+
+- Right click closes the nav
+- Responsiveness of header
+- Chrome compatability
+    - z-index problems
+    - whole circle is blue
+- Clicking a nav link shows the green part underneath
+    - Remove green altogether?
+
+
+---------------------------

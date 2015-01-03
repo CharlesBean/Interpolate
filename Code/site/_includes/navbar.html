@@ -1,0 +1,19 @@
+
+<button class="cn-button" id="cn-button">Nav</button>
+
+<div class="cn-wrapper" id="cn-wrapper">
+    <ul>
+        {% for page in site.pages %}
+            {% if page.title %}
+                <li><a href="{{ page.url | prepend: site.baseurl }}"><span class="icon-test">{{ page.title }}</span></a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+<script src="/js/navbar.js"></script>
+
+
+<!-- Old -->
+
+<!--<li><a href="#"><span class="icon-test">About</span></a></li>-->

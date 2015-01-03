@@ -1,0 +1,249 @@
+/**
+ * Site header
+ */
+.site-header {
+    min-height: 60px;
+    max-height: 90px;
+    margin-bottom: 130px;
+    margin-left: auto;
+    margin-right: auto;
+
+    // Positioning fixed
+    position: fixed;
+    width: 100%;
+
+    // Dark
+    background-image: $header-background;
+    
+    // Shadowing
+    box-shadow: inset 0 -10px 7px -10px black; //$brand-color or white?
+}
+
+.header-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    max-width: 1080px;
+    margin-right: auto;
+    position: relative;
+}
+
+.page-title {
+    font-family: 'title-font', sans-serif; //'title-font', 
+    font-size: 60px;
+    font-style: italic;
+    float: left;
+    opacity: .8;
+    margin-top: 5px;
+    margin-left: 5px;
+    
+    position: relative;
+    color: white;
+    text-decoration: none;
+    
+    /** 
+     * Handling hovers (box shadow animation) 
+    **/
+    &:hover {
+        color: white;
+    }
+    
+    &:before {
+        content: "";
+        position: absolute;
+        width: 97%;
+        height: 3px;
+        bottom: 20px;
+        left: 0;
+        background-color: $brand-color;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    &:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);   
+    }
+
+    &:after {
+        content: "\0000a0"; // Fixing italic color change glitch
+    }
+}
+
+/*************************************************/
+
+
+/**
+ * Site navigation
+ */
+
+/*************************************************/
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+/*************************************************/
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+    height: 2000px; // REMOVE
+    margin: 0 auto;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+    position: relative;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+/*************************************************/
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+/*************************************************/
+
+
+.home {
+    margin-top: 100px;
+}
+
+.post {
+    margin-top: 70px;
+    //margin-bottom:auto;
+}

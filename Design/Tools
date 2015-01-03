@@ -1,0 +1,51 @@
+Build               -   Grunt, Yeomann
+Server              -   Grunt, Jekyll, Sinatra
+Frameworks          -   Bootstrap, Foundation 5
+Languages           -   Javascript/JQuery, Ruby, HTML 5, CSS 3
+Notification        -   Hint.css, SweetAlert
+Data Display        -   Google Charts
+Animation           -   Velocity.js, Animate.css
+Comment Service     -   Disqus
+Package Manager     -   Bower, Gems
+Preprocessors       -   Compass
+Syntax Highlighter  -   Prism.js, Pygments
+
+
+
+Details
+----------------------------------------
+
+Handling Posts
+    - Jekyll
+        - Conversion from markdown
+
+Comments
+    - Disqus
+        - External comment management system
+        
+Data Display
+    - Google Charts
+        - Pie charts
+        
+Notifications
+    - Sweet Alert (Bootstrap)
+        - Attractive alert boxes
+        
+Testing
+    - Vagrant
+        - Sinatra?
+        
+
+    
+
+Resource Pages
+----------------------------------------
+
+http://nordness.net/posts/how-I-made-this-site
+
+http://www.reddit.com/r/webdev
+
+http://davidwalsh.name/css-js-animation
+
+http://jessica-eldredge.com/2014/01/11/developing-with-yeoman/
+

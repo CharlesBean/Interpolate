@@ -1,0 +1,266 @@
+/* Removed all prefixed .csstransforms that came before each class.. */
+
+.cn-wrapper {
+    position: relative;
+    z-index: 10;
+    width: 27em;
+    height: 27em;
+    border-radius: 50%;
+    background: transparent;
+    opacity: 0;
+    transition: all .3s ease 0.3s;
+    transform: scale(0.1);
+    pointer-events: none;
+    overflow: hidden; 
+    
+    // Responsive positioning
+    float: right;
+    
+    // Non-responsive
+    top: -11em; // -11em top, -38em right
+    right: -17em;
+    
+    &:after {
+        color: transparent;
+        content:".";
+        display:block;
+        font-size:2em;
+        width: 6.2em;
+        height: 6.2em;
+        position: absolute;
+        left: 50%;
+        margin-left: -3.1em;
+        top:50%;
+        margin-top: -3.1em;
+        border-radius: 50%;
+        z-index:10;
+    }
+}
+
+/* class applied tot he container via JavaScript that will scale navigation up */
+.opened-nav {
+    border-radius: 50%;
+    opacity: 1;
+    transition: all .3s ease;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.cn-button {
+    //font-family: 'title-font', sans-serif;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    height: 3.3em;
+    width: 3.3em;
+    background-color: $brand-color;
+    border-radius: 50%;
+    opacity: .9;
+    text-transform: uppercase;
+    
+    text-align: center;
+    position: relative;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5em;
+    margin-bottom: auto;
+    
+    cursor: pointer;
+    z-index: 11;
+    
+    &:hover, &:active, &:focus {
+        opacity: 1.0;
+        outline: 0;
+    }
+    
+    &:after {
+        background-color: $brand-color;
+        color: white;
+    }
+}
+
+.cn-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    padding:0;
+    margin:0;
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    
+    transition: all .3s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Class added to overlay when nav opened */
+.cn-overlay.on-overlay {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/******************************/
+
+.cn-wrapper li {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    overflow: hidden;
+    margin-top: -1.3em;
+    margin-left: -10em;
+    width: 10em;
+    height: 10em;
+    font-size: 1.5em;
+    transition: all .3s ease;
+    transform: rotate(-28deg) skew(60deg);
+    transform-origin: 100% 100%;
+    pointer-events: none;
+}
+ 
+.cn-wrapper li a {
+    position: absolute;
+    position: fixed; /* fix the "displacement" bug in webkit browsers when using tab key */
+    right: -7.25em;
+    bottom: -7.25em;
+    display: block;
+    width: 14.5em;
+    height: 14.5em;
+    border-radius: 50%;
+    background: $brand-color;
+    background: radial-gradient(transparent 35%, $brand-color 35%);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 2;
+    transition: all .3s ease;
+    transform: skew(-60deg) rotate(-75deg) scale(1);
+    pointer-events: auto;
+    
+    &:hover, &:active, &:focus {
+        background: radial-gradient(transparent 35%, #449e6a 35%);
+    }
+}
+ 
+.cn-wrapper li a span {
+    position: relative;
+    top: 1.8em;
+    display: block;
+    font-size: .5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    // Inverting the text
+    transform: rotate(180deg);
+}
+
+/*****************************/
+
+
+.opened-nav li {
+  transition: all .3s ease .3s;
+}
+ 
+/** Calculate by 360/ #elements, and give some space (2.. whatevs) */
+
+/** Current Calculation:
+
+        Total: 90 degrees
+        # Items: 3
+        Each: 30 deg
+        Space: -2 deg
+
+        Final: -92, -60, -28 (overflow on two sides)
+
+**/
+
+.opened-nav li:first-child {
+  transform: rotate(-92deg) skew(60deg);
+}
+ 
+.opened-nav li:nth-child(2) {
+  transform: rotate(-60deg) skew(60deg);
+}
+ 
+.opened-nav  li:nth-child(3) {
+  transform: rotate(-28deg) skew(60deg);
+}
+
+
+
+/**********************************/
+
+
+
+/* active style */
+.cn-wrapper li.active a {
+    background-color: #449e6a;
+    
+}
+ 
+/* hover style */
+.cn-wrapper li:not(.active) a:hover,
+.cn-wrapper li:not(.active) a:active,
+.cn-wrapper li:not(.active) a:focus {
+    background-color: #449e6a;
+}
+
+.cn-wrapper li:not(.active) a:focus {
+    position: fixed; /* fix the "displacement" bug in webkit browsers when using tab key */
+}
+
+
+/***************************/
+
+
+@media only screen and (max-width: 620px) {
+  li{
+    width:4em;
+    height:4em;
+    line-height:4em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cn-wrapper{
+    padding:.5em;
+  }
+  .cn-wrapper li{
+    font-size:.9em;
+    width:4em;
+    height:4em;
+    line-height:4em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cn-wrapper{
+    font-size: .68em;
+  }
+  .cn-button{
+    font-size:1em;
+  }
+}
+@media only screen and (max-width:420px){
+  .cn-wrapper li{
+    width:100%;
+    height:3em;
+    line-height:3em;
+  }
+}
+
+
+
+
+/*****************************/
+
+/* Dotted line removal */
+
+button::-moz-focus-inner {
+    border: 0;
+}
+

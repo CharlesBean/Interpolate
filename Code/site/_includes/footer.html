@@ -1,0 +1,16 @@
+<footer id="footer">
+
+    <div class="lockup">
+        
+        <div class="content-wrap">
+            <nav>
+                {% for item in side.data.menu %}
+                    <a href="{{ item.url }}">{{ item.name }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+        
+        <p class="copyright">All content copyright 2015</p>
+    </div>
+    
+</footer>

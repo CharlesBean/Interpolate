@@ -1,0 +1,8 @@
+#-------------------------
+# Configuration of Jekyll
+
+# Build settings
+markdown: kramdown
+
+# Pagination
+paginate: 5

@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8">
+<!--    <meta name="apple-mobile-web-capable" content="yes">-->
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ site.data.settings.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.data.settings.url }}">
+    
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.data.settings.baseurl | prepend: site.data.settings.url }}">
+
+    <meta name="description" content="{{ site.data.settings.description }}">
+    <meta rel="author" href="{{ site.data.settings.author }}">
+    <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
+    
+    <title>{{ site.data.settings.title }}</title>
+    
+    <link rel="stylesheet" href="css/main.scss">
+    
+    <script src='/js/jquery-2.1.3.js'></script>
+    
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>

@@ -1,0 +1,28 @@
+#-------------------------------
+# General Site Settings
+
+title: Interpolate
+description: > # this means to ignore newlines until "baseurl:"
+  All of your music are belong to us.
+email: interpolateblog@gmail.com
+author: Charles Bean
+twitter_username: 
+github_username: CharlesBean
+url: "" # base hostname & protocol
+baseurl: "/" # subpath (site/)
+
+# Navigation
+menu:
+- {name: About Me, url: 'www.google.com'}
+- {name: Test, url: 'nope'}
+
+
+#-------------------------------
+# SEO
+
+# Helps the website be found when being searched
+seo:
+  rel-author: ''
+  rel-publisher: ''
+  
+  
