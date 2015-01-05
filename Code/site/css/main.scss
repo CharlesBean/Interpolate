@@ -14,21 +14,23 @@ $small-font-size:   $base-font-size * 0.875;
 
 
 $brand-color:       #3e6990; // old cyan #2a7ae2;
-$text-color:        #474350;
-$bright-color:      #dcedff; 
-$offset-color:      #957186;
+$base-color:        #474350; // light grey tinted
+$bright-color:      #dcedff; // icey white
+$offset-color:      #957186; // soft red
+// 1 more?
+
 $brand-highlight:   lighten($brand-color, 5%); // og #8ea4d2
 $offset-highlight:  lighten($offset-color, 10%);
-$highlight-color:   #957186; //old green #449e6a;
+$highlight-color:   #957186; //old green #449e6a; (todo remove - use offset)
 
 
-//$text-color:        black; // old black #111
+$text-color:        #111;
 $grey-color:        #828282;
 $black-color:       #111111;
 $white-color:       #fdfdfd;
 $white-highlight:   lighten($white-color, 20%);
 $grey-color-light:  lighten($grey-color, 40%);
-$grey-color-dark:   darken($grey-color, 50%);
+$grey-color-dark:   darken($grey-color, 35%);
 
 
 
@@ -79,4 +81,14 @@ $album-image:       url({{ site.data.layout.albumOfTheWeekImage }});
 @font-face {
     font-family: 'navigation-font';
     src: url({{ site.data.layout.navigationFont }}) format("opentype");
+}
+
+@font-face {
+    font-family: 'folks';
+    src: url({{ site.data.layout.folksFont }}) format ("opentype");
+}
+
+@font-face {
+    font-family: 'dosis';
+    src: url('/assets/fonts/dosisNormal.otf') format ("opentype");
 }
