@@ -14,7 +14,9 @@
     height: 3.3em;
     width: 3.3em;
     background-color: $brand-color;
+    
     border-radius: 50%;
+    //border: .1em solid $grey-color-dark;
     
     
     text-align: center;
@@ -63,7 +65,7 @@
     
     // Non-responsive
     top: -9em; // -11em top, -38em right
-    right: -15.1em;
+    right: -14.6em;
     
     &:after {
         color: transparent;
@@ -143,7 +145,7 @@
     width: 14.5em;
     height: 14.5em;
     border-radius: 50%;
-//    background-color: $brand-color;
+
     background: radial-gradient(transparent 35%, $brand-color 35%);
     color: #fff;
     text-align: center;
@@ -155,7 +157,7 @@
     pointer-events: auto;
     
     &:hover, &:active, &:focus {
-        background: radial-gradient(transparent 35%, $highlight-color 35%);
+        background: radial-gradient(transparent 35%, $complement-color 35%);
     }
 }
  
@@ -211,7 +213,7 @@
 
 /* active style */
 .cn-wrapper li.active a {
-    background-color: $highlight-color;
+    background-color: $complement-color;
     
 }
  
@@ -219,7 +221,7 @@
 .cn-wrapper li:not(.active) a:hover,
 .cn-wrapper li:not(.active) a:active,
 .cn-wrapper li:not(.active) a:focus {
-    background-color: $highlight-color;
+    background-color: $complement-color;
 }
 
 .cn-wrapper li:not(.active) a:focus {

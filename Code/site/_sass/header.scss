@@ -3,8 +3,9 @@
  */
 
 .site-header {
-    min-height: 80px;
+    //min-height: 80px;
     max-height: 80px;
+    top: 0;
 
     // Positioning fixed
     position: fixed;
@@ -49,12 +50,13 @@
 }
 
 .header-left {
-    max-height: 90px;
+    max-height: 80px;
     float: left;
 }
 
 .header-right {
     float: right;
+    max-height: 80px;
 }
 
 .page-title {

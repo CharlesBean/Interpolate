@@ -5,41 +5,45 @@
 
 
 
+
 // Variables
-$base-font-family:  Helvetica, Arial, sans-serif;
-$base-line-height:  1.5;
-$spacing-unit:      30px;
-$base-font-size:    16px;
-$small-font-size:   $base-font-size * 0.875;
+$base-font-family:      Helvetica, Arial, sans-serif;
+$base-line-height:      1.5;
+$spacing-unit:          30px;
+$base-font-size:        16px;
+$small-font-size:       $base-font-size * 0.875;
+
+$content-width:         1280px;
+
+$brand-color:           #3e6990; // old cyan #2a7ae2;
+$dark-color:            #474350; // light grey tinted
+$light-color:           #fdfdfd; // icey white
+$offset-color:          #957186; // soft red
+$complement-color:      #497e43; // light green
+
+$complement-highlight:  lighten($complement-color, 10%);
+$brand-highlight:       lighten($brand-color, 5%); // og #8ea4d2
+$offset-highlight:      lighten($offset-color, 10%);
+$offset-color-dark:     darken($offset-color, 20%);
+$highlight-color:       #957186; //old green #449e6a; (todo remove - use offset)
 
 
-$brand-color:       #3e6990; // old cyan #2a7ae2;
-$base-color:        #474350; // light grey tinted
-$bright-color:      #dcedff; // icey white
-$offset-color:      #957186; // soft red
-// 1 more?
-
-$brand-highlight:   lighten($brand-color, 5%); // og #8ea4d2
-$offset-highlight:  lighten($offset-color, 10%);
-$highlight-color:   #957186; //old green #449e6a; (todo remove - use offset)
-
-
-$text-color:        #111;
-$grey-color:        #828282;
-$black-color:       #111111;
-$white-color:       #fdfdfd;
-$white-highlight:   lighten($white-color, 20%);
-$grey-color-light:  lighten($grey-color, 40%);
-$grey-color-dark:   darken($grey-color, 35%);
+$text-color:            #111;
+$grey-color:            #828282;
+$black-color:           #111111;
+$white-color:           #fdfdfd;
+$white-highlight:       lighten($white-color, 20%);
+$grey-color-light:      lighten($grey-color, 40%);
+$grey-color-dark:       darken($grey-color, 35%);
 
 
 
-$on-palm:           600px;
-$on-laptop:         800px;
+$on-palm:               600px;
+$on-laptop:             800px;
 
-$background-image:  url({{ site.data.layout.documentBackgroundImage }});
-$header-background: url({{ site.data.layout.headerBackgroundImage }});
-$album-image:       url({{ site.data.layout.albumOfTheWeekImage }});
+$background-image:      url({{ site.data.layout.documentBackgroundImage }});
+$header-background:     url({{ site.data.layout.headerBackgroundImage }});
+$album-image:           url({{ site.data.layout.albumOfTheWeekImage }});
 
 
 
@@ -67,7 +71,8 @@ $album-image:       url({{ site.data.layout.albumOfTheWeekImage }});
     "post",
     "syntax-highlighting",
     "navbar",
-    "soundplayer"
+    "soundplayer",
+    "imageslider"
 ;
 
 
