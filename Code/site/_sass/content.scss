@@ -3,7 +3,7 @@
  */
 
 .page-content {
-    padding-top: 90px;
+    padding-top: 80px;
     height: 2000px; // REMOVE
     margin: 0 auto;
     overflow: hidden;
@@ -25,7 +25,7 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $text-color;
 }
 
 .post-link {
@@ -38,8 +38,17 @@
 }
 
 .wrapper{
-    background-color: white;
+    //background-color: white;
     height: 100%;
 }
 
 /*************************************************/
+.precontent-image {
+    height: 50%;
+    background-image: $album-image;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //padding: 130px 0 141px;
+}

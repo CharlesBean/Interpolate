@@ -2,7 +2,12 @@
 
 # Image URLs
 documentBackgroundImage: '/assets/images/tree_bark.png'
-headerBackgroundImage: '/assets/images/dark-metropolis.jpg'
+headerBackgroundImage: '/assets/images/dark-metropolis-light.jpg'
+albumOfTheWeekImage: '/assets/backgrounds/KoanSoundSanctuary.jpg'
+
+#http://cdn.elegantthemes.com/preview/Vertex/wp-content/uploads/2013/06/header10.jpg'
+
+#'http://cdn.elegantthemes.com/preview/Vertex/wp-content/uploads/2013/06/header10.jpg'
 
 # Font URLs
 titleFont: '/assets/fonts/pincoyablack.otf'

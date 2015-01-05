@@ -10,12 +10,12 @@
     background: none;
     border: none;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     height: 3.3em;
     width: 3.3em;
     background-color: $brand-color;
     border-radius: 50%;
-    //opacity: .9;
+    
     
     text-align: center;
     position: relative;
@@ -34,17 +34,22 @@
         outline: 0;
     }
     
+    &:hover {
+        background-color: $brand-highlight;
+    }
+    
     &:after {
         background-color: $brand-color;
         color: white;
     }
+
 }
 
 .cn-wrapper {
     position: relative;
     z-index: 10;
-    width: 27em;
-    height: 27em;
+    width: 25em;
+    height: 25em;
     border-radius: 50%;
     background: transparent;
     opacity: 0;
@@ -57,8 +62,8 @@
     float: right;
     
     // Non-responsive
-    top: -8.5em; // -11em top, -38em right
-    right: -16.5em;
+    top: -9em; // -11em top, -38em right
+    right: -15.1em;
     
     &:after {
         color: transparent;
@@ -131,26 +136,26 @@
  
 .cn-wrapper li a {
     position: absolute;
-    position: fixed; /* fix the "displacement" bug in webkit browsers when using tab key */
+    //position: fixed; /* fix the "displacement" bug in webkit browsers when using tab key - but causes bug in google with color */
     right: -7.25em;
     bottom: -7.25em;
     display: block;
     width: 14.5em;
     height: 14.5em;
     border-radius: 50%;
-    background: $brand-color;
+    background-color: $brand-color;
     background: radial-gradient(transparent 35%, $brand-color 35%);
     color: #fff;
     text-align: center;
     text-decoration: none;
     font-size: 1.2em;
     line-height: 2;
-    transition: all .3s ease;
+    //transition: all .3s ease; // nav item connector transition time
     transform: skew(-60deg) rotate(-75deg) scale(1);
     pointer-events: auto;
     
     &:hover, &:active, &:focus {
-        background: radial-gradient(transparent 35%, #449e6a 35%);
+        background: radial-gradient(transparent 35%, $highlight-color 35%);
     }
 }
  
@@ -160,7 +165,7 @@
     display: block;
     font-size: .5em;
     font-weight: 700;
-    text-transform: uppercase;
+//    text-transform: uppercase;
     
     // Inverting the text
     transform: rotate(180deg);
@@ -170,7 +175,7 @@
 
 
 .opened-nav li {
-  transition: all .3s ease .3s;
+    transition: all .3s ease .3s; 
 }
  
 /** Calculate by 360/ #elements, and give some space (2.. whatevs) */
@@ -206,7 +211,7 @@
 
 /* active style */
 .cn-wrapper li.active a {
-    background-color: #449e6a;
+    background-color: $highlight-color;
     
 }
  
@@ -214,7 +219,7 @@
 .cn-wrapper li:not(.active) a:hover,
 .cn-wrapper li:not(.active) a:active,
 .cn-wrapper li:not(.active) a:focus {
-    background-color: #449e6a;
+    background-color: $highlight-color;
 }
 
 .cn-wrapper li:not(.active) a:focus {

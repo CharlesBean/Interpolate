@@ -6,26 +6,38 @@
 
 
 // Variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family:  Helvetica, Arial, sans-serif;
+$base-line-height:  1.5;
+$spacing-unit:      30px;
+$base-font-size:    16px;
+$small-font-size:   $base-font-size * 0.875;
 
-$spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$home-color:       #111111;
-$background-image: url({{ site.data.layout.documentBackgroundImage }});
-$header-background:url({{ site.data.layout.headerBackgroundImage }});
-$brand-color:      #2a7ae2;
+$brand-color:       #3e6990; // old cyan #2a7ae2;
+$text-color:        #474350;
+$bright-color:      #dcedff; 
+$offset-color:      #957186;
+$brand-highlight:   lighten($brand-color, 5%); // og #8ea4d2
+$offset-highlight:  lighten($offset-color, 10%);
+$highlight-color:   #957186; //old green #449e6a;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 50%);
 
-$on-palm:          600px;
-$on-laptop:        800px;
+//$text-color:        black; // old black #111
+$grey-color:        #828282;
+$black-color:       #111111;
+$white-color:       #fdfdfd;
+$white-highlight:   lighten($white-color, 20%);
+$grey-color-light:  lighten($grey-color, 40%);
+$grey-color-dark:   darken($grey-color, 50%);
+
+
+
+$on-palm:           600px;
+$on-laptop:         800px;
+
+$background-image:  url({{ site.data.layout.documentBackgroundImage }});
+$header-background: url({{ site.data.layout.headerBackgroundImage }});
+$album-image:       url({{ site.data.layout.albumOfTheWeekImage }});
 
 
 
@@ -52,7 +64,8 @@ $on-laptop:        800px;
     "footer",
     "post",
     "syntax-highlighting",
-    "navbar"
+    "navbar",
+    "soundplayer"
 ;
 
 

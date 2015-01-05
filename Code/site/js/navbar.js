@@ -16,7 +16,7 @@
     
     function navHandler(e){
         if (!e) var e = window.event;
-        e.stopPropagation(); // No click event trigger on document (preventDefault??)
+        e.stopPropagation(); // No click event trigger on document
         
         if (!open){
             openNav();
@@ -29,17 +29,17 @@
     function openNav(){
         open = true;
         button.innerHTML = "Close";
-        overlay.classList.add('on-overlay');
+        //overlay.classList.add('on-overlay');
         wrapper.classList.add('opened-nav');
     }
     
     function closeNav(){
         open = false;
         button.innerHTML = "Menu";
-        overlay.classList.remove('on-overlay');
+        //overlay.classList.remove('on-overlay');
         wrapper.classList.remove('opened-nav');
     }
     
-    document.addEventListener('click', closeNav);
+    //document.addEventListener('click', closeNav);
     
 })();
