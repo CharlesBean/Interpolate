@@ -1,14 +1,28 @@
 
 jekyll serve --host $IP --port $PORT --watch
 
+
+--------------------------
+
+Notes
+
+1) Don't add private/hidden sass partials - jekyll compiles only specific hidden ones
+    - The main.scss is the compiled css that comes out of _sass
+
+2) Don't forget to link JS in the correct locations (after elements that already exist - if need be)
+
+3) Adding a page is as simple as adding a new file to the root dir, and giving it a bit of YAML
+
+
 --------------------------
 
 Main Page
     - Header
         - Title in header, float left
+        - Twitter link, small, next to it (float left in same div)
         - Popup circular animated navbar in header, float right
-            - Icons
-        - Bottom edge shadowed and outlined
+            - About, Archives, Samples
+        - Underline from title to nav bar
     - Body
     
     - Footer
@@ -17,7 +31,7 @@ About Page
 
 Archive Page
 
-Favorites Page?
+404 Page
 
 
 
@@ -26,6 +40,7 @@ Favorites Page?
 
 IDEAS
 
+- Add icons to the navbar
 - Weekly Interpolation
     - Interject a bit of me discussing the song into a song
 - Album of the Month
@@ -36,18 +51,3 @@ IDEAS
     
     
     
-    
----------------------------
-    
-TO FIX:
-
-- Right click closes the nav
-- Responsiveness of header
-- Chrome compatability
-    - z-index problems
-    - whole circle is blue
-- Clicking a nav link shows the green part underneath
-    - Remove green altogether?
-
-
----------------------------

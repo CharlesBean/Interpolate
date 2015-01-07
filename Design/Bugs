@@ -1,0 +1,25 @@
+---------------------------
+
+
+TO FIX:
+
+
+- After hovering over a nav option, hovering over the button/menu itself no longer works
+- Find fonts
+- Right click closes the nav
+- Opening dev-tools window conflicts with album image
+- Chrome compatability
+    - Cant tab select navigation options
+        - fixing the tab issue creates a new bug - see below
+    - Other bug is the whole cn-wrapper is colored and moved on nav
+- Clicking a nav link shows the green part underneath [FIXED]
+- Nav word can be shaken left to right, etc.
+
+
++ Calculate angles of navigation links based on the number of pages, JS
+    + Then add 2, etc., for space
++ Clean up variables in main.scss (& add some/refactor)
++ Responsiveness of header
+
+
+---------------------------
