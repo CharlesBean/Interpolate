@@ -6,3 +6,5 @@ markdown: kramdown
 
 # Pagination
 paginate: 5
+
+sass_dir: css/

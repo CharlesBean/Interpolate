@@ -22,6 +22,24 @@
 
             </div>
 
+            <div class='aotw-wrapper' style='background-image: url( {{ post.album-image }} )'>
+        
+                <div class='banner'>
+        
+                    <h2>Album of the Week</h2>
+                    <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+        
+                </div>
+        
+                <div class='album-name'>
+        
+                    <h1>{{ post.artist }}</h1>
+                    <h3>{{ post.album }}</h3>
+        
+                </div>
+        
+            </div>
+
         </a>
 
     {% endif %}
