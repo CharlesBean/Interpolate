@@ -5,7 +5,7 @@
 .page-content {
     margin-top: 80px;
     width: $content-width;
-    height: 2000px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -49,7 +49,7 @@
 }
 
 .post-image {
-    border-top: .25em solid $grey-color-dark;
+//    border-top: .25em solid $grey-color-dark;
     //border-bottom: .25em solid $grey-color-dark;
     overflow: hidden;
 }

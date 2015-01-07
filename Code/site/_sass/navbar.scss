@@ -25,7 +25,7 @@
     
     
     margin-top: 1.4em;
-    margin-right: 3em;
+    //margin-right: 3em;
     margin-bottom: auto;
     
     cursor: pointer;
@@ -37,7 +37,7 @@
     }
     
     &:hover {
-        background-color: $brand-highlight;
+        background-color: $nav-hightlight-color;
     }
     
     &:after {
@@ -69,18 +69,18 @@
     
     &:after {
         color: transparent;
-        content:".";
-        display:block;
-        font-size:2em;
+        content: ".";
+        display: block;
+        font-size: 2em;
         width: 6.2em;
         height: 6.2em;
         position: absolute;
         left: 50%;
         margin-left: -3.1em;
-        top:50%;
+        top: 50%;
         margin-top: -3.1em;
         border-radius: 50%;
-        z-index:6;
+        z-index: 6;
     }
 }
 
@@ -157,7 +157,7 @@
     pointer-events: auto;
     
     &:hover, &:active, &:focus {
-        background: radial-gradient(transparent 35%, $complement-color 35%);
+        background: radial-gradient(transparent 35%, $nav-hightlight-color 35%);
     }
 }
  
@@ -213,7 +213,7 @@
 
 /* active style */
 .cn-wrapper li.active a {
-    background-color: $complement-color;
+    background-color: $nav-hightlight-color;
     
 }
  
@@ -221,7 +221,7 @@
 .cn-wrapper li:not(.active) a:hover,
 .cn-wrapper li:not(.active) a:active,
 .cn-wrapper li:not(.active) a:focus {
-    background-color: $complement-color;
+    background-color: $nav-hightlight-color;
 }
 
 .cn-wrapper li:not(.active) a:focus {

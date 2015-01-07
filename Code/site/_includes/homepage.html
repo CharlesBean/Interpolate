@@ -1,0 +1,8 @@
+
+{% for post in site.posts %}
+    {% if post.categories contains 'aotw' %}
+
+        {% include aotw.html %}
+
+    {% endif %}
+{% endfor %}

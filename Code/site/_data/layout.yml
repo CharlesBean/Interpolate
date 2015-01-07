@@ -3,7 +3,6 @@
 # Image URLs
 documentBackgroundImage: '/assets/images/tree_bark.png'
 headerBackgroundImage: '/assets/images/dark-metropolis-light.jpg'
-albumOfTheWeekImage: '/assets/backgrounds/KoanSoundSanctuary.jpg'
 
 # Font URLs
 titleFont: '/assets/fonts/pincoyablack.otf'

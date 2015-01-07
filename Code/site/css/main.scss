@@ -13,14 +13,15 @@ $spacing-unit:          30px;
 $base-font-size:        16px;
 $small-font-size:       $base-font-size * 0.875;
 
-$content-width:         1280px;
+$content-width:         1080px;
 
 $brand-color:           #3e6990; // old cyan #2a7ae2;
 $dark-color:            #474350; // light grey tinted
 $light-color:           #fdfdfd; // icey white
 $offset-color:          #957186; // soft red
-$complement-color:      #497e43; // light green
+$complement-color:      #497e43; // light green (#fffd82 for yellow)
 
+$nav-hightlight-color:  $offset-color;
 $complement-highlight:  lighten($complement-color, 10%);
 $brand-highlight:       lighten($brand-color, 5%); // og #8ea4d2
 $offset-highlight:      lighten($offset-color, 10%);
@@ -43,7 +44,6 @@ $on-laptop:             800px;
 
 $background-image:      url({{ site.data.layout.documentBackgroundImage }});
 $header-background:     url({{ site.data.layout.headerBackgroundImage }});
-$album-image:           url({{ site.data.layout.albumOfTheWeekImage }});
 
 
 
@@ -72,7 +72,7 @@ $album-image:           url({{ site.data.layout.albumOfTheWeekImage }});
     "syntax-highlighting",
     "navbar",
     "soundplayer",
-    "imageslider"
+    "aotw" // Album of the week
 ;
 
 

@@ -23,7 +23,7 @@ var $ = function (selector) {
     
     function hoverHandler(e){
         if (open){
-            button.style.backgroundColor = '#497e43';
+            button.style.backgroundColor = '#957186';
         }  
     }
     

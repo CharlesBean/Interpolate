@@ -1,0 +1,105 @@
+/*************************************************/
+
+.aotw-wrapper {
+    height: 480px;
+    width: $content-width;
+    margin: 0 auto;
+    
+    background-color: black;
+    background-position: 50% 100%; // first is horiz, second is vertical
+    background-attachment: fixed;
+    //background-size: cover;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+    
+    box-shadow: 0 10px 12px -10px black;
+
+    border-bottom: .25em solid $grey-color-dark;
+    
+    &:hover {
+        
+        .album-name {
+            transition: 4s all ease;
+            color: $brand-color; //white?
+        }
+    }
+            
+}
+
+.banner {
+    font-family: 'dosis';
+    text-align: center;
+    font-size: 12px;
+    width: 25em;
+    height: 2em;
+    position: fixed;
+    background-color: $complement-color;
+    color: $grey-color-dark;
+    margin: 0 auto;
+    height: auto;
+    
+    top: -2%;
+    
+    position: relative;
+    
+    border: .25em solid $grey-color-dark;
+    border-radius: 1em;
+    
+    text-shadow: 0px 1px 0px rgba(255,255,255, .4), 0px -1px 0px rgba(0,0,0,.9);
+    
+    
+    &:before {
+        content: "";
+        display: inline-block; // Vertical centering
+    }
+    
+    h2 {
+        margin-bottom: -.25em;
+        font-weight: 500;
+    }
+    
+    h3, h4, h5 {
+        font-style: italic;
+        margin-bottom: 1em;
+    }
+}
+
+.album-name {
+//    background-color: $grey-color-dark;
+//    border-radius: 1em;
+//    border: .2em solid black;
+    
+    
+    color: transparent;
+    font-family: cursive;
+    font-size: 22px;
+    position: relative;
+    font-weight: 1000;
+    text-align: center;
+
+    text-shadow: 0px 1px 0px rgba(255,255,255, .4), 0px -1px 0px rgba(0,0,0,.9);
+   
+    height: auto;
+    width: 20em;
+    margin: 0 auto;
+    top: 5em;
+}
+
+.divider {
+    transform: translateY(-50%);
+    text-align: center;
+    width: 4em;
+    height: 4em;
+    position: relative;
+    
+    background-color: $offset-color-dark;
+    color: $white-color;
+    margin: 0 auto;
+    z-index: 1;
+
+    padding: 1em;
+    
+    border-radius: 50%;
+    border: .25em solid $grey-color-dark;
+}
