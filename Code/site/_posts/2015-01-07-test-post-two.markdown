@@ -1,13 +1,11 @@
 ---
-layout:                 post
-title:                  "Album of the Week"
-date:                   2015-01-05 3:26
-categories:             aotw
-background-image:       "/assets/backgrounds/KoanSoundSanctuary.jpg"
+layout:             post
+title:              "Album Review"
+categories:         review
+background-image:   "/assets/backgrounds/CulprateDeliverance.jpg"
 
-artist:                 Koan Sound & Asa
-album:                  Sanctuary EP
-link:                   "http://www.soundcloud.com/koan-sound"
+artist:             Culprate 
+album:              Deliverance
 ---
 
 Lorem ipsum dolor sit amet, nonumy doctus discere cu est. Vel in novum nobis scaevola. Stet eius inani cu vix, eu placerat inimicus mea. Cu eos fugit libris.

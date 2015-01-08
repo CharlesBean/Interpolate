@@ -65,13 +65,13 @@ $header-background:     url({{ site.data.layout.headerBackgroundImage }});
 @import
     "base",
     "header",
-    "content",
     "footer",
     "post",
     "syntax-highlighting",
     "navbar",
     "soundplayer",
-    "aotw" // Album of the week
+    "homepage-content",
+    "page-content"
 ;
 
 

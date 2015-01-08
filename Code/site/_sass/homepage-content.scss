@@ -1,5 +1,18 @@
 /*************************************************/
 
+.page-content {
+    margin-top: 80px;
+    width: $content-width;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-image: none;
+    background-color: transparent;
+    
+    box-shadow: 0px 5px 10px 5px black;
+}
+
 .post-preview-wrapper {
     height: 480px;
     width: $content-width;
@@ -15,16 +28,26 @@
     
     box-shadow: 0 10px 12px -10px black;
 
-    border-bottom: .25em solid $grey-color-dark;
+    //border-bottom: .25em solid $grey-color-dark;
     
     &:hover {
         
         .post-name {
-            transition: 4s all ease;
-            color: $brand-color; //white?
+            transition: 3s all ease;
+            color: $white-color; //white?
         }
-    }
             
+        .post-name:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1); 
+        }
+            
+        .post-name:after {
+            content: "\0000a0"; // Fixing italic color change glitch
+        }
+        
+    }
 }
 
 .banner {
@@ -34,7 +57,7 @@
     width: 25em;
     height: 2em;
     position: fixed;
-    background-color: $complement-color;
+    background-color: $white-color;
     color: $grey-color-dark;
     margin: 0 auto;
     height: auto;
@@ -84,22 +107,44 @@
     width: 20em;
     margin: 0 auto;
     top: 5em;
+    
+    
+    .post-name:before {
+        content: "";
+        position: absolute;
+        width: 100%; //310 (width of the underline) *fix to relative
+        height: 3px;
+        bottom: 20px;
+        left: 0;
+        background-color: $white-color;
+        visibility: hidden;
+        
+        // Uncomment to add animation
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 2s ease-out 0s;
+    }
 }
 
 .divider {
-    transform: translateY(-50%);
-    text-align: center;
-    width: 4em;
-    height: 4em;
-    position: relative;
-    
-    background-color: $offset-color-dark;
-    color: $white-color;
-    margin: 0 auto;
-    z-index: 1;
+    // None
+}
 
-    padding: 1em;
+.aotw {
+    @extend .banner;
     
-    border-radius: 50%;
-    border: .25em solid $grey-color-dark;
+    background-color: $complement-color;
+}
+
+.announcement {
+    @extend .banner;
+    
+    background-color: $brand-color;
+}
+
+.review {
+    @extend .banner;
+    
+    background-color: $offset-color;
 }
