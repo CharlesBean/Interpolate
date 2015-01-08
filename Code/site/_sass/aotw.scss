@@ -1,13 +1,13 @@
 /*************************************************/
 
-.aotw-wrapper {
+.post-preview-wrapper {
     height: 480px;
     width: $content-width;
     margin: 0 auto;
     
     background-color: black;
     background-position: 50% 100%; // first is horiz, second is vertical
-    background-attachment: fixed;
+    background-attachment: relative; // fixed for post pages?
     //background-size: cover;
     background-repeat: no-repeat;
     
@@ -19,7 +19,7 @@
     
     &:hover {
         
-        .album-name {
+        .post-name {
             transition: 4s all ease;
             color: $brand-color; //white?
         }
@@ -65,7 +65,7 @@
     }
 }
 
-.album-name {
+.post-name {
 //    background-color: $grey-color-dark;
 //    border-radius: 1em;
 //    border: .2em solid black;

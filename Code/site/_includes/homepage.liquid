@@ -1,5 +1,5 @@
 
-{% for post in site.posts %}
+{% for post in site.posts limit:5 %}
     {% if post.categories contains 'aotw' %}
 
         <a style='display: block' href='{{ post.url }}'>
@@ -25,5 +25,4 @@
         </a>
 
     {% endif %}
-
 {% endfor %}

@@ -1,0 +1,73 @@
+<div class="page-content">
+
+    {% for post in site.posts limit:5 %}
+    
+        <a style='display: block' href='{{ post.url }}'>
+        
+            <div class='post-preview-wrapper' style='background-image: url({{ post.background-image }})'>
+            
+                <div class='banner'>
+                
+                    <h2>{{ post.title }}</h2>
+                    <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                    
+                </div>
+                
+                <div class='post-name'>
+                    
+                    {% if post.categories contains 'aotw' %}
+                    
+                        <h1>{{ post.artist }}</h1>
+                        <h3>{{ post.album }}</h3>
+                        
+                    {% endif %}
+                    
+                    {% if post.categories contains 'announcement' %}
+                    
+                        <h1>"{{ post.excerpt }}"</h1>
+                        
+                    {% endif %}
+                    
+                </div>
+                
+            </div>
+            
+        </a>
+        
+    {% endfor %}
+    
+</div>
+                
+                    
+                    
+                    
+    
+    <!--OLD-->
+    
+        <!--TODO - Fix by making more dynamic and extensible-->
+        <!--{% if post.categories contains 'aotw' %}-->
+    
+        <!--    <a style='display: block' href='{{ post.url }}'>-->
+    
+        <!--        <div class='post-preview-wrapper' style='background-image: url({{ post.album-image }})'>-->
+    
+        <!--            <div class='banner'>-->
+    
+        <!--                <h2>Album of the Week</h2>-->
+        <!--                <h4>{{ post.date | date: '%B %d, %Y' }}</h4>-->
+    
+        <!--            </div>-->
+    
+        <!--            <div class='post-name'>-->
+    
+        <!--                <h1>{{ post.artist }}</h1>-->
+        <!--                <h3>{{ post.album }}</h3>-->
+    
+        <!--            </div>-->
+    
+        <!--        </div>-->
+    
+        <!--    </a>-->
+    
+        <!--{% endif %}-->
+        
