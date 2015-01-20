@@ -30,15 +30,33 @@
     box-shadow: 0 10px 12px -10px black;
     
     &:hover {
+        cursor: pointer;
         .post-name {
             transition: 3s all ease;
             color: $white-color; //white?
         }
-        
         .post-name:before {
             visibility: visible;
             -webkit-transform: scaleX(1);
             transform: scaleX(1); 
+        }
+    }
+    
+
+
+    // Hidden content
+    
+    &.content {
+        color: black;
+        background-color: $white-color;
+        transition: 2s all ease;
+        
+        &.hidden {
+            height: 0em;
+        }
+        
+        &.visible {
+            height: auto;
         }
     }
 }

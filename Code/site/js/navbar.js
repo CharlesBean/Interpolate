@@ -14,7 +14,6 @@ var $ = function (selector) {
     var open = false; // Open flag
     
     
-    
     button.addEventListener('click', navHandler, false);
     wrapper.addEventListener('click', cnHandler, false);
 
@@ -24,7 +23,7 @@ var $ = function (selector) {
     function hoverHandler(e){
         if (open){
             button.style.backgroundColor = '#497e43';
-        }  
+        } 
     }
     
     function leaveHandler(e){

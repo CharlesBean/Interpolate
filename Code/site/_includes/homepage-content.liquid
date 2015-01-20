@@ -8,8 +8,8 @@
     
         <!--The Title Div-->
     
-        <a style='display: block;' href='{{ post.url }}'>
-            <div class="latest-post" style='background-image: url({{ post.background-image }});'>
+        <a style='display: block;' >
+            <div id='latest-post' class="latest-post" style='background-image: url({{ post.background-image }});'>
             
                 {% if post.banner %}
                 
@@ -29,6 +29,10 @@
         
         <!--The Extendable Content-->
         
+        <div id="latest-post-content" class="latest-post content hidden">
+            <p>{{ post.content }}</p>
+        </div>
+        
         
         
     {% endfor %}
@@ -44,6 +48,8 @@
     
     
 </div>
+
+<script src="/js/homepage.js"></script>
 
 
 
