@@ -23,7 +23,7 @@ var $ = function (selector) {
     
     function hoverHandler(e){
         if (open){
-            button.style.backgroundColor = '#957186';
+            button.style.backgroundColor = '#497e43';
         }  
     }
     
@@ -62,14 +62,16 @@ var $ = function (selector) {
     
     function openNav(){
         open = true;
-        button.innerHTML = "Close";
+        //button.innerHTML = "Close"; // Using icon now
         wrapper.classList.add('opened-nav');
+        //button.style.border = 'medium none';
     }
     
     function closeNav(){
         open = false;
-        button.innerHTML = "Menu";
+        //button.innerHTML = "Menu";
         wrapper.classList.remove('opened-nav');
+        //button.style.border = 'medium none';
     }
     
 })();

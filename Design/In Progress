@@ -1,2 +1,6 @@
-Hovering over a post on the homepage should 
-    underline the title as well (animation)
+Homepage display:
+    Recent post with image as fixed
+        - Arrow to close
+            - Upon closing, contracts and reveals all other post images
+                - Images are relative
+        

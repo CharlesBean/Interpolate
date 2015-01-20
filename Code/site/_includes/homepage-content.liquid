@@ -1,72 +1,128 @@
-<div class="page-content">
+<!--The homepage content-->
 
-    {% for post in site.posts limit:5 %}
+<div class="page-content">
     
-        <a style='display: block' href='{{ post.url }}'>
-        
-            <div class='post-preview-wrapper' style='background-image: url({{ post.background-image }})'>
-                
-                
-                {% if post.categories contains 'aotw' %}
-                
-                    <div class='banner aotw'>
-                    
-                        <h2>{{ post.title }}</h2>
-                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-                        
-                    </div>
-                
-                    <div class='post-name'>
-                        
-                        <h1>{{ post.artist }}</h1>
-                        <h3>{{ post.album }}</h3>
-                        
-                    </div>
-                
-                {% endif %}
-                
-                {% if post.categories contains 'announcement' %}
-                
-                    <div class='banner announcement'>
-                    
-                        <h2>{{ post.title }}</h2>
-                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-                        
-                    </div>
-                
-                    <div class='post-name'>
-                        
-                        <h1>"{{ post.excerpt }}"</h1>
-                        
-                    </div>
-                    
-                {% endif %}
-                
-                {% if post.categories contains 'review' %}
-                
-                    <div class='banner review'>
-                    
-                        <h2>{{ post.title }}</h2>
-                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
-                        
-                    </div>
-                
-                    <div class='post-name'>
-                        
-                        <h1>{{ post.artist }}</h1>
-                        <h3>{{ post.album }}</h3>
-                        
-                    </div>
-                    
-                {% endif %}
-                
-            </div>
+    <!-- The latest post-->
+    
+    {% for post in site.posts limit:1 %}
+    
+        <!--The Title Div-->
+    
+        <a style='display: block;' href='{{ post.url }}'>
+            <div class="latest-post" style='background-image: url({{ post.background-image }});'>
             
+                {% if post.banner %}
+                
+                    <div class='banner {{ post.banner }}'>
+                        <h2>{{ post.title }}</h2>
+                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>
+                    </div>
+                
+                {% endif %}
+                
+                <div class='post-name'>
+                    <h1>{{ post.artist }}</h1>
+                    <h3>{{ post.album }}</h3>
+                </div>
+            </div>
         </a>
         
-        <div class='divider'></div>
+        <!--The Extendable Content-->
+        
+        
         
     {% endfor %}
     
+    <!--All other posts-->
+    
+    {% for post in site.posts offset:1 limit:9 %}
+    
+        <!--TODO-->
+    
+    {% endfor %}
+    
+    
+    
 </div>
+
+
+
+<!--<div class="page-content">-->
+
+<!--    {% for post in site.posts limit:1 %}-->
+    
+<!--        <a style='display: block' href='{{ post.url }}'>-->
+    
+<!--    {% endfor %}-->
+
+<!--    {% for post in site.posts offset:1 limit:9 %}-->
+    
+<!--        <a style='display: block' href='{{ post.url }}'>-->
+        
+            <!--<div class='post-preview-wrapper' style='background-image: url({{ post.background-image }})'>-->
+                
+                
+<!--                {% if post.categories contains 'aotw' %}-->
+                
+<!--                    <div class='banner aotw'>-->
+                    
+<!--                        <h2>{{ post.title }}</h2>-->
+<!--                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>-->
+                        
+<!--                    </div>-->
+                
+<!--                    <div class='post-name'>-->
+                        
+<!--                        <h1>{{ post.artist }}</h1>-->
+<!--                        <h3>{{ post.album }}</h3>-->
+                        
+<!--                    </div>-->
+                
+<!--                {% endif %}-->
+                
+<!--                {% if post.categories contains 'announcement' %}-->
+                
+<!--                    <div class='banner announcement'>-->
+                    
+<!--                        <h2>{{ post.title }}</h2>-->
+<!--                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>-->
+                        
+<!--                    </div>-->
+                
+<!--                    <div class='post-name'>-->
+                        
+<!--                        <h1>"{{ post.excerpt }}"</h1>-->
+                        
+<!--                    </div>-->
+                    
+<!--                {% endif %}-->
+                
+<!--                {% if post.categories contains 'review' %}-->
+                
+<!--                    <div class='banner review'>-->
+                    
+<!--                        <h2>{{ post.title }}</h2>-->
+<!--                        <h4>{{ post.date | date: '%B %d, %Y' }}</h4>-->
+                        
+<!--                    </div>-->
+                
+<!--                    <div class='post-name'>-->
+                        
+<!--                        <h1>{{ post.artist }}</h1>-->
+<!--                        <h3>{{ post.album }}</h3>-->
+                        
+<!--                    </div>-->
+                    
+<!--                {% endif %}-->
+                
+<!--            </div>-->
+            
+<!--        </a>-->
+        
+<!--        <div class='divider'></div>-->
+
+        
+<!--    {% endfor %}-->
+    
+<!--</div>-->
                 

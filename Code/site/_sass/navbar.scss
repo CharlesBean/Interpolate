@@ -6,38 +6,41 @@
  */
 
 .cn-button {
-    //font-family: 'navigation-font', sans-serif;
     background: none;
-    border: none;
-    color: white;
-    font-size: 1.3em;
-    height: 3.3em;
-    width: 3.3em;
+    border: medium none;
+    //color: white;
+    height: 4.5em;
+    width: 4.5em;
     background-color: $brand-color;
     
     border-radius: 50%;
-    //border: .1em solid $grey-color-dark;
     
-    
-    text-align: center;
     position: relative;
     float: right;
-    
-    
-    margin-top: 1.4em;
-    //margin-right: 3em;
-    margin-bottom: auto;
+
+    margin-top: 2.25em;
     
     cursor: pointer;
     z-index: 7; // 3rd
     
+    transition: all .15s ease;
+    
+    -webkit-backface-visibility: hidden;
+    
+    .fa-bars {
+        color: white;
+    }
+    
+    
     &:hover, &:active, &:focus {
         opacity: 1.0;
         outline: 0;
+        border: 5px solid $grey-color-dark;
     }
     
-    &:hover {
-        background-color: $nav-hightlight-color;
+    &:hover {      
+        //border: 5px solid $grey-color-dark;
+        //background-color: $nav-hightlight-color;
     }
     
     &:after {
@@ -155,6 +158,8 @@
     //transition: all .3s ease; // nav item connector transition time
     transform: skew(-60deg) rotate(-75deg) scale(1);
     pointer-events: auto;
+    
+    transition: all .1s ease;
     
     &:hover, &:active, &:focus {
         background: radial-gradient(transparent 35%, $nav-hightlight-color 35%);
@@ -276,6 +281,5 @@
 button::-moz-focus-inner {
     border: 0;
 }
-
 
 

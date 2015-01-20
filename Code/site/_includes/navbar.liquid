@@ -1,12 +1,16 @@
 
-<button class="cn-button" id="cn-button"><span>Menu</span></button>
+<button class="cn-button" id="cn-button"><span>
+    <i class="fa fa-bars fa-2x"></i>
+</span></button>
 
 <div class="cn-wrapper" id="cn-wrapper">
     <ul id='nav-options'>
         
         {% for page in site.pages %}
             {% if page.title %}
+            
                 <li><a href="{{ page.url | prepend: site.baseurl }}"><span class="icon-test">{{ page.title }}</span></a></li>
+                
             {% endif %}
         {% endfor %}
         

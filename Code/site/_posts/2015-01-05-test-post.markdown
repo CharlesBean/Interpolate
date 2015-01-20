@@ -4,6 +4,7 @@ title:                  "Album of the Week"
 date:                   2015-01-05 3:26
 categories:             aotw
 background-image:       "/assets/backgrounds/KoanSoundSanctuary.jpg"
+banner:                 aotw
 
 artist:                 Koan Sound & Asa
 album:                  Sanctuary EP

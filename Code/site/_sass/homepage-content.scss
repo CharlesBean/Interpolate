@@ -1,7 +1,8 @@
 /*************************************************/
 
+
 .page-content {
-    margin-top: 80px;
+    margin-top: 90px;
     width: $content-width;
     height: auto;
     margin-left: auto;
@@ -10,10 +11,10 @@
     background-image: none;
     background-color: transparent;
     
-    box-shadow: 0px 5px 10px 5px black;
+    box-shadow: 0px 2px 7px 3px black;
 }
 
-.post-preview-wrapper {
+.latest-post {
     height: 480px;
     width: $content-width;
     margin: 0 auto;
@@ -27,26 +28,18 @@
     overflow: hidden;
     
     box-shadow: 0 10px 12px -10px black;
-
-    //border-bottom: .25em solid $grey-color-dark;
     
     &:hover {
-        
         .post-name {
             transition: 3s all ease;
             color: $white-color; //white?
         }
-            
+        
         .post-name:before {
             visibility: visible;
             -webkit-transform: scaleX(1);
             transform: scaleX(1); 
         }
-            
-        .post-name:after {
-            content: "\0000a0"; // Fixing italic color change glitch
-        }
-        
     }
 }
 
@@ -56,13 +49,13 @@
     font-size: 12px;
     width: 25em;
     height: 2em;
-    position: fixed;
+    position: relative;
     background-color: $white-color;
     color: $grey-color-dark;
     margin: 0 auto;
     height: auto;
     
-    top: -2%;
+    top: -3%;
     
     position: relative;
     
@@ -96,7 +89,7 @@
     
     color: transparent;
     font-family: cursive;
-    font-size: 22px;
+    font-size: 16px;
     position: relative;
     font-weight: 1000;
     text-align: center;
@@ -104,9 +97,13 @@
     text-shadow: 0px 1px 0px rgba(255,255,255, .4), 0px -1px 0px rgba(0,0,0,.9);
    
     height: auto;
-    width: 20em;
+    width: 100%;//20em;
     margin: 0 auto;
-    top: 5em;
+    top: 7em;
+    
+    background-color: $grey-color-dark;
+    border-bottom: .3em solid $brand-color;
+    border-top: .3em solid $brand-color;    
     
     
     .post-name:before {
@@ -147,4 +144,14 @@
     @extend .banner;
     
     background-color: $offset-color;
+}
+
+/****************************************/
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }

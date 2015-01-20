@@ -21,8 +21,11 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    //background-color: $background-color;
-    background-image: $background-image;
+    //background-color: $grey-color-dark;
+    
+    //background-image: $background-image;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), $background-image;
+    
     webkit-text-size-adjust: 100%;
 }
 
